@@ -158,87 +158,31 @@
 
       <a-sky color="#EEEEFF" material="src: #sky_sphere-texture"></a-sky>
 
+      <a-entity id="hallprefab" position="0 -0 -5" height="3.5" width="8.5">
+        <a-box color="white" height="1" depth="10" width="8.5"
+               material="src: #floor-texture; normalMap: #floor_normal-texture; metalness: 0.3" >
+        </a-box>
+        <a-box clas="left-wall" color="white" position="-4.25 2.6" height="4.5" depth="10" width="0.1"
+              material="src: #hall-texture" >
+        </a-box>
+         <a-box clas="right-wall" color="white" position="4.25 2.6" height="4.5" depth="10" width="0.1"
+              material="src: #hall-texture" >
+        </a-box>
+         <a-box clas="roof" color="white" position="-4.25 2.6" height="4.5" depth="10" width="0.1"
+              material="src: #hall-texture" >
+        </a-box>
+      </a-entity>
       <a-entity static-body obj-model="obj: #floor-obj;" material="src: #floor-texture; normalMap: #floor_normal-texture; metalness: 0.6" id="floor"></a-entity>
-      <a-entity static-body obj-model="obj: #hall-obj;" material="src: #hall-texture" id="hall"></a-entity>
+      <a-entity kinetic-body obj-model="obj: #hall-obj;" material="src: #hall-texture" id="hall"></a-entity>
       <a-entity static-body obj-model="obj: #hall_low_floor-obj;" material="opacity: 0.0" id="hall_low_floor"></a-entity>
       <a-entity obj-model="obj: #acropolis-obj;" material="src: #acropolis-texture"></a-entity>
       <a-entity obj-model="obj: #castle_lake-obj;" material="src: #castle_lake-texture"></a-entity>
       <a-entity obj-model="obj: #good_samaritan-obj;" material="src: #good_samaritan-texture"></a-entity>
       <a-entity obj-model="obj: #moonlight-obj;" material="src: #moonlight-texture"></a-entity>
-      <a-entity obj-model="obj: #podiums-obj;" material="src: #podiums-texture"></a-entity>
+      <a-entity static-body obj-model="obj: #podiums-obj;" material="src: #podiums-texture"></a-entity>
       <a-entity obj-model="obj: #lamps-obj;" material="src: #lamps-texture; side: double;"></a-entity>
 
-      <!--<a-entity obj-model="obj: #david-obj;" material="src: #david-texture"></a-entity>-->
-      <a-entity ctm="src: #david-ctm; name:david;"></a-entity>
 
-      <!--<a-entity obj-model="obj: #female_head-obj;" material="src: #female_head-texture"></a-entity>-->
-      <a-entity ctm="src: #female_head-ctm; name:female_head;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #lion-obj;" material="src: #lion-texture"></a-entity>-->
-      <a-entity ctm="src: #lion-ctm; name:lion;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #greek_bust-obj;" material="src: #greek_bust-texture"></a-entity>-->
-      <a-entity ctm="src: #greek_bust-ctm; name:greek_bust;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #old_man-obj;" material="src: #old_man-texture"></a-entity>-->
-      <a-entity ctm="src: #old_man-ctm; name:old_man;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #nefertiti-obj;" material="src: #nefertiti-texture"></a-entity>-->
-      <a-entity ctm="src: #nefertiti-ctm; name:nefertiti;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #fractal_1-obj;" material="src: #fractal_1-texture"></a-entity>-->
-      <a-entity ctm="src: #fractal_1-ctm; name:fractal_1;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #fractal_2-obj;" material="src: #fractal_2-texture"></a-entity>-->
-      <a-entity ctm="src: #fractal_2-ctm; name:fractal_2;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #fractal_3-obj;" material="src: #fractal_3-texture"></a-entity>-->
-      <a-entity ctm="src: #fractal_3-ctm; name:fractal_3;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #female_helmet-obj;" material="src: #female_helmet-texture"></a-entity>-->
-      <a-entity ctm="src: #female_helmet-ctm; name:female_helmet;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #monk_uv-obj;" material="src: #monk_uv-texture"></a-entity>-->
-      <a-entity ctm="src: #monk_uv-ctm; name:monk_uv;"></a-entity>
-
-      <!--<a-entity obj-model="obj: #david_bike_hall_3-obj;" material="src: #david_bike_hall_3-texture"></a-entity>-->
-      <a-entity ctm="src: #david_bike_hall_3-ctm; name:david_bike_hall_3;"></a-entity>
-
-      <a-entity mocap="head: #am_threejs_CEC_BODY_1_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_1_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_1_RIGHT-mocap;
-                       totalFrames:645;
-                       torsoPosition: 0 -0.4 0.05"
-                position=" -3 1 6.5"
-                rotation="0 -90 0">
-      </a-entity>
-
-      <a-entity mocap="head: #am_threejs_CEC_BODY_2_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_2_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_2_RIGHT-mocap;
-                       totalFrames:626;
-                       torsoPosition: 0.0 -0.4 0.05"
-                position=" -3 1 9.2"
-                rotation="0 -90 0">
-      </a-entity>
-
-      <a-entity mocap="head: #am_threejs_CEC_BODY_3_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_3_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_3_RIGHT-mocap;
-                       totalFrames:600;
-                       torsoPosition: 0 -0.4 0.05"
-                position=" -3 1 12.2"
-                rotation="0 -90 0">
-      </a-entity>
-
-      <a-entity mocap="head: #am_threejs_CEC_BODY_4_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_4_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_4_RIGHT-mocap;
-                       totalFrames:7050;
-                       torsoPosition: -0.05 -0.4 0.0"
-                position=" -3 1 4"
-                rotation="0 0 0">
-      </a-entity>
 
       <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="left"></a-entity>
       <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="right"></a-entity>
